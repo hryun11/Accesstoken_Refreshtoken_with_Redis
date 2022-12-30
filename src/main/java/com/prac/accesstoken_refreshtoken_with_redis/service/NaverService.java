@@ -2,15 +2,6 @@ package com.prac.accesstoken_refreshtoken_with_redis.service;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.finalproject.dontbeweak.auth.UserDetailsImpl;
-import com.finalproject.dontbeweak.auth.jwt.JwtTokenProvider;
-import com.finalproject.dontbeweak.dto.SocialLoginInfoDto;
-import com.finalproject.dontbeweak.jwtwithredis.Response;
-import com.finalproject.dontbeweak.jwtwithredis.UserResponseDto;
-import com.finalproject.dontbeweak.model.NaverProfile;
-import com.finalproject.dontbeweak.model.OAuthToken;
-import com.finalproject.dontbeweak.model.User;
-import com.finalproject.dontbeweak.repository.UserRepository;
 import com.prac.accesstoken_refreshtoken_with_redis.dto.Response;
 import com.prac.accesstoken_refreshtoken_with_redis.dto.SocialLoginInfoDto;
 import com.prac.accesstoken_refreshtoken_with_redis.dto.UserResponseDto;

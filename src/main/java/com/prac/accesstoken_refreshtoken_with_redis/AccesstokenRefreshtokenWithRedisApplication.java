@@ -11,6 +11,7 @@ public class AccesstokenRefreshtokenWithRedisApplication {
 
     public static final String APPLICATION_LOCATIONS = "spring.config.location="
             + "classpath:application-jwt.yml,"
+            + "classpath:application-redis.yml,"
             + "classpath:application.yml";
 
     public static void main(String[] args) {

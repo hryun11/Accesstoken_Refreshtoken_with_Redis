@@ -64,12 +64,6 @@ public class FormLoginFilter extends UsernamePasswordAuthenticationFilter {
         System.out.println("successfulAuthentication 실행됨: 인증이 완료되었다는 뜻.");
         UserDetailsImpl userDetails = (UserDetailsImpl) authResult.getPrincipal();
 
-        //RSA방식은 아니고 Hash암호 방식
-//        String jwtToken = JWT.create()
-//                .withSubject("cos토큰")
-//                .withExpiresAt(new Date(System.currentTimeMillis()+(60000*60)))
-//                .withClaim("username",userDetails.getUser().getUsername())
-//                .sign(Algorithm.HMAC512("thwjd2"));
 
         // 3. 인증 정보를 기반으로 JWT AccessToken, RefreshToken 생성
         UserResponseDto.TokenInfo tokenInfo = jwtTokenProvider.generateToken(authResult);
